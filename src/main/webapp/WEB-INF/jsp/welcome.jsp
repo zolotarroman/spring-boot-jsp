@@ -39,6 +39,30 @@
 		</div>
 
 	</div>
+	<div>
+		<table
+				class="table table-striped table table-hover table-bordered table-condensed text-center panel-body"
+				id="applicationTable">
+			<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Surname</th>
+				<th>Password</th>
+			</tr>
+			</thead>
+			<tbody>
+			<c:forEach items="${user}" var="application">
+				<tr>
+					<td><c:out value="${user.id}"></c:out></td>
+					<td><c:out value="${user.name}"></c:out></td>
+					<td><c:out value="${user.surname}"></c:out></td>
+					<td><c:out value="${user.password}"></c:out></td>
+				</tr>
+			</c:forEach>
+			</tbody>
+		</table>
+	</div>
 	<!-- /.container -->
 
 	<script type="text/javascript"
